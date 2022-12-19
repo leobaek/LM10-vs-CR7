@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 from app_home import run_home_app
 from app_R import run_R_app
 from app_M import run_M_app
-
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+from app_cp import run_cp_app
 def main() : 
     
 
@@ -28,7 +30,7 @@ def main() :
         run_R_app()
     
     elif choice =='Compare M with R' :
-        pass
+        run_cp_app()
      
    
 
